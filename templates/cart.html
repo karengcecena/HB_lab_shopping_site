@@ -14,10 +14,12 @@
         </thead>
         <tbody>
         <tr>
-            <td>Ancient Watermelon</td>
-            <td>5</td>
-            <td>$3.00</td>
-            <td>$15.00</td>
+            {% for melon in melons %}
+            <td>{{ melon_id }}</td>
+            <td>{{ melon.quantity }}</td>
+            <td>{{  }}</td>
+            <td>{{ melon.total_price }}</td>
+            {{ endfor %}
         </tr>
         <tr>
             <td>Charleston Gray</td>
